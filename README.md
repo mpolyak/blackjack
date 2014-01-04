@@ -16,6 +16,8 @@ Technologies
 
 [CoffeScript] - CoffeeScript is a little language that compiles into JavaScript.
 
+[Node] - Node.js is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications.
+
 [Ascii Table] - Easy table output for node debugging, but you could probably do more with it, since its just a string.
 
 Installation
@@ -136,6 +138,7 @@ License
 MIT
 
 [CoffeScript]:http://coffeescript.org/
+[Node]:http://nodejs.org/
 [Ascii Table]:https://github.com/sorensen/ascii-table/
 [Basic]:http://en.wikipedia.org/wiki/Blackjack#Basic_strategy
 [Wizard]:http://wizardofodds.com/games/blackjack/
