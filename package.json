@@ -1,0 +1,38 @@
+{
+	"name": "Blackjack",
+	"description": "Blackjack game simulator for determining optimal playing and betting strategy.",
+	"version": "0.1.0",
+	"license": "MIT",
+	"keywords": [
+	    "blackjack",
+	    "game",
+	    "simulator"
+	],
+	"author": {
+		"name": "Michael Polyak",
+		"email": "mpolyak@gmail.com",
+		"url": "http://github.com/mpolyak"
+	},
+	"keywords": [
+	    "cli",
+	    "http",
+	    "server"
+	],
+	"homepage": "https://github.com/mpolyak/blackjack",
+	"repository": {
+	    "type": "git",
+	    "url": "https://github.com/mpolyak/blackjack.git"
+	},
+	"engines": {
+		"node": ">=0.10"
+	},
+	"main": "coffee/main",
+	"scripts": {
+	    "prepublish": "cake sbuild",
+	    "start": "node coffee/main"
+	},
+	"dependencies": {
+		"coffee-script": "1.6.x",
+		"ascii-table": "0.0.4"
+	}
+}
