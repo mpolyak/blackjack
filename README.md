@@ -23,7 +23,6 @@ From the command line run the following commands:
 git clone https://github.com/mpolyak/blackjack.git blackjack
 cd blackjack
 npm install
-cake sbuild
 ```
 Edit **coffee/main.coffee** and set **tables** variable to point to the game tables you wish to simulate, for example:
 
