@@ -119,13 +119,13 @@ This simulation plays **1,000,000** games of **6** hands for the three kinds of 
 | 2 | 1000000 |     6 | **Increment** | -12.8/-2.54/0 | 0/3.33/48   | -12.8/**0.06**/48 | 1/5.99/19 | 0/**112.25**/4800 | 0/4/11           | 0/**3**/11           | 0/1/6           | 0/1/6           | -1.83/0.01/6.86 |
 | 3 | 1000000 |     6 | Double    | -11/-1.82/0   | 0/2.23/29.2 | -11/0.05/29.2 | 1/4.8/15  | 0/84.29/2920  | 0/3/10           | 0/3/11           | 0/0/6           | 0/1/7           | -1.67/0.01/4.4  |
 
-The **Increment** betting strategy seems to provide the best results in terms of average overall expected PnL and ROI. While the **Double** strategy shows a lower capital requirement with a lower expected PnL and ROI. Finally, the **Constant** has the least capital requirements but with an expected breakeven PnL.
+The **Increment** betting strategy seems to provide the best results in terms of average overall expected PnL and ROI. While the **Double** strategy shows a lower capital requirement with a lower expected PnL and ROI. Finally, the **Constant** strategy has the least capital requirements but with an expected breakeven PnL.
 
 Conclusion
 ==========
 * Play utilizing the **[Wizard]** strategy.
 * If you are not in the money **7** hands in to the game, it may be time to stop.
-* If you are ahead by the **3** hand and you start losing, it may be advisable to quit ahead.
+* If you are ahead by the **3rd** hand and you start losing, it may be advisable to quit ahead.
 * Use the **Increment** or **Double** betting strategy depending on your risk tolerance.
 
 License
