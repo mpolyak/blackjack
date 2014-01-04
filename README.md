@@ -2,7 +2,9 @@ Blackjack
 =========
 
 #####Blackjack game simulator for determining optimal playing and betting strategy.
-This simulation can be setup to run a number of playing and betting strategies for a specified number of games and hands.It will output results to stdout in a table format.
+This simulation can be setup to run a number of playing and betting strategies for a specified number of games and hands. 
+
+It will output results to **STDOUT** in a table format.
 
 Version
 -------
