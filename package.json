@@ -13,11 +13,6 @@
 		"email": "mpolyak@gmail.com",
 		"url": "http://github.com/mpolyak"
 	},
-	"keywords": [
-	    "cli",
-	    "http",
-	    "server"
-	],
 	"homepage": "https://github.com/mpolyak/blackjack",
 	"repository": {
 	    "type": "git",
