@@ -27,7 +27,7 @@ cake sbuild
 ```
 Edit **coffee/main.coffee** and set **tables** variable to point to the game tables you wish to simulate, for example:
 
-```sh
+```
 tables = STRATEGY_EDGE_TABLES
 ```
 After configurating the desired simulation, run the script:
@@ -37,11 +37,11 @@ node coffee/main
 ```
 Simulation
 ==========
-There are certain assumption built in to the simulation in regards to the rules used in playing Blackjack.
+There are certain assumption built in to the simulation in regards to the rules used for playing Blackjack.
 
-* Dealer will hit on a hard 16 and below or on a soft 17.
+* Dealer will hit on a hard 16 and below, or on a soft 17.
 * Aces may be re-split up to four times.
-* Double-down on dealt cards only with specific hands unique to each playing strategy.
+* Double-down on 2 cards only with set hands unique to each playing strategy.
 * Surrender is not allowed.
 * Dealer peeks for Blackjack.
 * Blackjack payout is 6/5.
@@ -50,18 +50,18 @@ There are certain assumption built in to the simulation in regards to the rules 
 Playing Strategies
 ------------------
 The following are the playing strategies available for simulation:
-1. **Dealer** - Play as if you are the dealer.
-2. **Never Bust** - Stand on a hard 12 or above.
-3. **[Basic]** - Blackjack Basic Strategy
-4. **[Wizard]** - Wizard's Simple Strategy
-5. **[Simple]** - A varaition on the Wizard strategy.
+* **Dealer** - Play as if you are the dealer.
+* **Never Bust** - Stand on a hard 12 or above.
+* **[Basic]** - Blackjack Basic Strategy
+* **[Wizard]** - Wizard's Simple Strategy
+* **[Simple]** - A varaition of the Wizard strategy.
 
 Betting Strategies
 ------------------
 There are three betting strategies available for simulation:
-1. **Constant** - Player will bet a constant amount on each hand.
-2. **Increment** - Player will increment bet size by the original bet amount after every win and will reset to original bet on a loss.
-3. **Double** - Player will double the bet amount after every 2nd win and will reset to the original bet on a loss.
+* **Constant** - Player will bet a constant amount on each hand.
+* **Increment** - Player will increment bet size by the original bet amount after every win and will reset to original bet size on a loss.
+* **Double** - Player will double the bet amount after every 2nd win and will reset to the original bet amount on a loss.
 
 Strategy Edges
 --------------
@@ -76,6 +76,7 @@ Simulating available playing strategies for a game of **1,000,000** hands.
 | 5 |     1 | 1000000 | Simple     |  44.91 |  47.02 |   8.07 |            18 |            20 |             3 |             3 |  -4.49 |
 
 We will select the **[Wizard]** playing strategy since it has an effective edge and is simple to play.
+
 Optimial Number Of Hands
 -------------------------
 Having selected the **[Wizard]** strategy, the next step is to determine how many hands per game is the optimal number. For that we will simulate **100,000** games with a hand count ranging from **1 to 20**.
@@ -111,7 +112,7 @@ Optimal Betting Strategy
 ------------------------
 Based on the preceding table, the number of **6** hands per game is selected to be used in testing the optimal betting strategy.
 
-This simulation plays **1,000,000** games of **6** hands for the three types of betting strategies.
+This simulation plays **1,000,000** games of **6** hands for the three kinds of betting strategies.
 
 | # |  Games  | Hands |  Betting  |   Min PnL $   |  Max PnL $  |     PnL $     | Capital $ |     ROI %     | Hands to Min PnL | Hands to Max PnL | Min PnL to Flat | Max PnL to Flat | Exp per Hand $  |
 |:-:|:-------:|:-----:|:---------:|:-------------:|:-----------:|:-------------:|:---------:|:-------------:|:----------------:|:----------------:|:---------------:|:---------------:|:---------------:|
@@ -124,8 +125,8 @@ The **Increment** betting strategy seems to provide the best results in terms of
 Conclusion
 ==========
 * Play utilizing the **[Wizard]** strategy.
-* If you are not in the money **7** hands in to the game, it may be time to move on.
-* If you are ahead by the **3** hand and you start losing, it may be advisable to quite ahead.
+* If you are not in the money **7** hands in to the game, it may be time to stop.
+* If you are ahead by the **3** hand and you start losing, it may be advisable to quit ahead.
 * Use the **Increment** or **Double** betting strategy depending on your risk tolerance.
 
 License
